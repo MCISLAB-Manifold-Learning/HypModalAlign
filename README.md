@@ -293,13 +293,13 @@ bash python ./prepro/scripts/extract_rarespecies.py
 
 The dataset annotations are organized under the directory `./data/{datasetname}`. Specifically:
 
-- The files `gt_{split}.txt` contains the data list and leaf-node level annotations.
-- The files ```tree.py```and `tree_{subsample}.npy` records the hierarchical information.
+- The files `gt_{split}.txt` contain the data list and leaf-node level annotations.
+- The files ```tree.py```and `tree_{subsample}.npy` record the hierarchical information.
 - The files `treecuts_{num}.pkl` and ````treecuts_{num}_{subsample}.pkl```` are used for MTA evaluation.
 
 # Training
 
-We have organized detailed training configurations in the ```./configs/``` directory. With the main configuration parameters explained in ```./configs/few_shot/1-shot/cifar100/maple+ours.yml```.
+We have organized detailed training configurations in the ```./configs/``` directory, with the main configuration parameters explained in ```./configs/few_shot/1-shot/cifar100/maple+ours.yml```.
 
 You can refer to the corrsponding training scripts provided in ```./scripts/``` to reproduce the results.For example, to reproduce the 1-shot Cifar100-100 results using MaPLe, you can execute the command
 
