@@ -288,7 +288,7 @@ $ conda activate alitree
 After downloading the datasets using the links provided above, you can place them directly into the ```./prepro/raw/``` directory or create symbolic links to their locations. For the Rare Species dataset, an additional preprocessing step is required, which can be executed by running:
 
 ```
-bash python ./prepro/scripts/extract_rarespecies.py
+$ bash python ./prepro/scripts/extract_rarespecies.py
 ```
 
 The dataset annotations are organized under the directory `./data/{datasetname}`. Specifically:
@@ -304,7 +304,7 @@ We have organized detailed training configurations in the ```./configs/``` direc
 You can refer to the corrsponding training scripts provided in ```./scripts/``` to reproduce the results.For example, to reproduce the 1-shot Cifar100-100 results using MaPLe, you can execute the command
 
 ```
-python train.py --config ./configs/few_shot/1-shot/cifar100/maple+ours.yml --trial 1
+$ python train.py --config ./configs/few_shot/1-shot/cifar100/maple+ours.yml --trial 1
 ```
 
 For experiments under different settings, simply specify the corresponding configuration file.
@@ -313,12 +313,12 @@ For experiments under different settings, simply specify the corresponding confi
 # Evaluation
 LA and HCA are automatically evaluated after training completes. To re-evaluate these metrics for a saved checkpoint, run ```reeval.py``` and specify the experiment directory, for example:
 ```
-python reeval.py --folder ./runs/cifar100/maple/ViT-B_16/few_shot/1-shot/ours/trial_1 --bz {your_batch_size}
+$ python reeval.py --folder ./runs/cifar100/maple/ViT-B_16/few_shot/1-shot/ours/trial_1 --bz {your_batch_size}
 ```
 
 To evaluate MTA, use ```evalmta.py``` with the target experiment directory:
 ```
-python evalmta.py --folder ./runs/cifar100/maple/ViT-B_16/few_shot/$1-shot/ours/trial_1 --bz ${your_batch_size}
+$ python evalmta.py --folder ./runs/cifar100/maple/ViT-B_16/few_shot/$1-shot/ours/trial_1 --bz ${your_batch_size}
                
 ```
 
