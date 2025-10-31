@@ -1,0 +1,9 @@
+*/__pycache__/*
+__pycache__/*
+*.tar.gz
+*.tar
+*.gz
+*.zip
+prepro/raw/*
+runs/*
+reproduced_logs/

@@ -1,0 +1,51 @@
+seed: 1
+model:
+    arch: maple 
+    name: ViT-B/16
+    prec: fp16
+    n_ctx: 2 
+    ctx_init: a photo of a
+    prompt_depth: 3
+    max_epoch: 200
+    hierachical: true 
+    curv_version: learn2derive1 
+    curv_init: 0.05 
+    curv_i_init: 0.05 
+    curv_t_init: 0.025
+    curv_m_init: 0.025
+data:
+    name: cifar100
+    loader: HierDataLoader
+    data_root: prepro/raw/cifar100
+    train: prepro/data/cifar100/gt_train.txt
+    test: prepro/data/cifar100/gt_test.txt
+    hierarchy: prepro/data/cifar100/tree.npy
+    batch_size: 8
+    n_workers: 4
+    sampler:
+        name: nshot
+        nshot: 16
+    transform: clip
+init_label_set: leaf
+optim:
+    name: sgd
+    lr: 0.01
+    max_epoch: 200
+    lr_scheduler: cosine
+    warmup_epoch: 1
+    warmup_type: constant
+    warmup_cons_lr: 0.001
+loss:
+    name: ce
+    lambda: 0.5
+    mta_weight: 1
+    align_weight: 0.5
+    scaling_factor_i: 1.0
+    scaling_factor_t: 1.0
+print_freq: 20
+
+exp: ViT-B_16/few_shot/16-shot/ours
+
+treecut_generator:
+    arch: treecut_generator
+    dropout_rate: 0.1

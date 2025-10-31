@@ -1,0 +1,73 @@
+seed: 1
+model:
+    # Architecture of prompt tuning method. Available options:['maple', 'promptsrc']
+    arch: maple 
+    # Visual encoder. For now, only 'VIT-B/16' is supported.
+    name: ViT-B/16
+    # Precision. For now, only 'fp16' is supported.
+    prec: fp16
+    # Length of the context. 
+    n_ctx: 2 
+    # Initialization for the text prompt.
+    ctx_init: a photo of a
+    # The depth of the prompt 
+    prompt_depth: 3
+    # Number of training epochs.
+    max_epoch: 200
+    # Whether to use our proposed Semantic-Aware Hierachical Feature Extraction module
+    hierachical: true 
+    # Curvature generation mechanism, 'learn2derive' denotes what is adopted by our proposed Heterogeneous Manifold Aliment Alogorithm.
+    curv_version: learn2derive1 
+    # Init curvature values 
+    ##Default value for curvatures, also influence the clamping operation of the curvatures.
+    curv_init: 0.5 
+    ##Fine-grained curvatures for image manifold, text manifold and itermediate manifold, respectively.
+    curv_i_init: 0.5 
+    curv_t_init: 0.5
+    curv_m_init: 0.5
+data:
+    # Dataset name. Available options: ['cifar100', 'sun', 'imagenet', 'rarespecies']
+    name: cifar100
+    # Class name of dataLoader. For TOS classification, please set this to 'HierDataLoader'
+    loader: HierDataLoader
+    # The root directory of raw data.
+    data_root: prepro/raw/cifar100
+    # Annotations of the dataset.
+    train: prepro/data/cifar100/gt_train.txt
+    test: prepro/data/cifar100/gt_test.txt
+    # Path of the Tree object of the dataset.
+    hierarchy: prepro/data/cifar100/tree.npy
+    batch_size: 8
+    n_workers: 4
+    sampler:
+        name: nshot
+        nshot: 1
+    transform: clip
+init_label_set: leaf
+optim:
+    name: sgd
+    lr: 0.02
+    max_epoch: 200
+    lr_scheduler: cosine
+    warmup_epoch: 1
+    warmup_type: constant
+    warmup_cons_lr: 0.001
+loss:
+    name: ce
+    # lambda parameter that was introduced by https://arxiv.org/pdf/2306.02240
+    lambda: 0.5
+    mta_weight: 1
+    # The weight of our entailment loss.
+    align_weight: 0.5
+    # The scaling factor to scale the feature before mapping to the corresponding hyperbolic space.
+    scaling_factor_i: 10
+    scaling_factor_t: 10
+print_freq: 20
+
+# ./runs/dataset/{exp}/{model.arch} are the directory where logs and checkpoints are saved.
+exp: ViT-B_16/few_shot/1-shot/ours
+
+# Configuration of treecut generator. For more details, please refer to https://github.com/gina9726/ProTeCt and its corresponding paper https://arxiv.org/pdf/2306.02240.
+treecut_generator:
+    arch: treecut_generator
+    dropout_rate: 0.1
