@@ -1,5 +1,5 @@
-# Alignment across Trees
-#### Repository for the paper Alignment across Trees. (TODO:add link.)  
+# HypModalAlign
+#### Repository for the paper [Modality Alignment across Trees on Heterogeneous Hyperbolic Manifolds](https://arxiv.org/abs/2510.27391).
 
 ## Performance Highlights([[TOS classification]](https://github.com/gina9726/ProTeCt))
 
@@ -334,5 +334,13 @@ Our work is based on the following codebases. Thanks for their brilliant contrib
 # Cite
 If you find this repository useful, please consider cite our paper.
 ```
-TODO
+@misc{wei2025modalityalignmenttreesheterogeneous,
+      title={Modality Alignment across Trees on Heterogeneous Hyperbolic Manifolds}, 
+      author={Wu Wei and Xiaomeng Fan and Yuwei Wu and Zhi Gao and Pengxiang Li and Yunde Jia and Mehrtash Harandi},
+      year={2025},
+      eprint={2510.27391},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2510.27391}, 
+}
 ```
