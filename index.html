@@ -1,1 +1,615 @@
-<!doctype html><meta charset="utf-8"><title>HypModalAlign</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Primary Meta Tags -->
+  <!-- TODO: Replace with your paper title and author names -->
+  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
+  <!-- TODO: Write a compelling 150-160 character description of your research -->
+  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Add 5-10 relevant keywords for your research area -->
+  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
+  <!-- TODO: List all authors -->
+  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="article">
+  <!-- Institution/Lab names for this paper page -->
+  <meta property="og:site_name" content="Beijing Institute of Technology (BIT); Shenzhen MSU-BIT University; Monash University">
+  <!-- TODO: Same as paper title above -->
+  <meta property="og:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Replace with your actual website URL -->
+  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
+  <!-- TODO: Create a 1200x630px preview image and update path -->
+  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
+  <meta property="article:author" content="FIRST_AUTHOR_NAME">
+  <meta property="article:section" content="Research">
+  <meta property="article:tag" content="KEYWORD1">
+  <meta property="article:tag" content="KEYWORD2">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- TODO: Replace with your lab/institution Twitter handle -->
+  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
+  <!-- TODO: Replace with first author's Twitter handle -->
+  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
+  <!-- TODO: Same as paper title above -->
+  <meta name="twitter:title" content="PAPER_TITLE">
+  <!-- TODO: Same as description above -->
+  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
+  <!-- TODO: Same as social preview image above -->
+  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+
+  <!-- Academic/Research Specific -->
+  <meta name="citation_title" content="PAPER_TITLE">
+  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
+  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
+  <meta name="citation_publication_date" content="2026">
+  <meta name="citation_conference_title" content="ICLR 2026 (Poster)">
+  <meta name="citation_pdf_url" content="https://arxiv.org/pdf/2510.27391.pdf">
+  
+  <!-- Additional SEO -->
+  <meta name="theme-color" content="#2563eb">
+  <meta name="msapplication-TileColor" content="#2563eb">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://ajax.googleapis.com">
+  <link rel="preconnect" href="https://documentcloud.adobe.com">
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+
+  <!-- TODO: Replace with your paper title and authors -->
+  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
+  
+  <!-- Favicon and App Icons -->
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="apple-touch-icon" href="static/images/favicon.ico">
+  
+  <!-- Critical CSS - Load synchronously -->
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+  
+  <!-- Non-critical CSS - Load asynchronously -->
+  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  
+  <!-- Fallback for browsers that don't support preload -->
+  <noscript>
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  </noscript>
+  
+  <!-- Fonts - Optimized loading -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Defer non-critical JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script defer src="static/js/bulma-carousel.min.js"></script>
+  <script defer src="static/js/bulma-slider.min.js"></script>
+  <script defer src="static/js/index.js"></script>
+  
+  <!-- Structured Data for Academic Papers -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ScholarlyArticle",
+    "headline": "PAPER_TITLE",
+    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "author": [
+      {
+        "@type": "Person",
+        "name": "FIRST_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "SECOND_AUTHOR_NAME",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "INSTITUTION_NAME"
+        }
+      }
+    ],
+    "datePublished": "2024-01-01",
+    "publisher": {
+      "@type": "Organization",
+      "name": "International Conference on Learning Representations (ICLR) 2026"
+    },
+    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
+    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
+    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
+    "abstract": "FULL_ABSTRACT_TEXT_HERE",
+    "citation": "BIBTEX_CITATION_HERE",
+    "isAccessibleForFree": true,
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "mainEntity": {
+      "@type": "WebPage",
+      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "RESEARCH_AREA_1"
+      },
+      {
+        "@type": "Thing", 
+        "name": "RESEARCH_AREA_2"
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Website/Organization Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Beijing Institute of Technology (BIT); Shenzhen MSU-BIT University; Monash University",
+    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
+    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
+    "sameAs": [
+      "https://twitter.com/YOUR_TWITTER_HANDLE",
+      "https://github.com/YOUR_GITHUB_USERNAME"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- More Works Dropdown -->
+  <div class="more-works-container">
+    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
+      <i class="fas fa-flask"></i>
+      More Works
+      <i class="fas fa-chevron-down dropdown-arrow"></i>
+    </button>
+    <div class="more-works-dropdown" id="moreWorksDropdown">
+      <div class="dropdown-header">
+        <h4>More Works from Our Lab</h4>
+        <button class="close-btn" onclick="toggleMoreWorks()">
+          <i class="fas fa-times"></i>
+        </button>
+      </div>
+      <div class="works-list">
+        <!-- TODO: Replace with your lab's related works -->
+        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
+          <div class="work-info">
+            <!-- TODO: Replace with actual paper title -->
+            <h5>Paper Title 1</h5>
+            <!-- TODO: Replace with brief description -->
+            <p>Brief description of the work and its main contribution.</p>
+            <!-- TODO: Replace with venue and year -->
+            <span class="work-venue">Conference/Journal 2024</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <!-- TODO: Add more related works or remove extra items -->
+        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Paper Title 2</h5>
+            <p>Brief description of the work and its main contribution.</p>
+            <span class="work-venue">Conference/Journal 2023</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
+          <div class="work-info">
+            <h5>Paper Title 3</h5>
+            <p>Brief description of the work and its main contribution.</p>
+            <span class="work-venue">Conference/Journal 2023</span>
+          </div>
+          <i class="fas fa-external-link-alt"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <main id="main-content">
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <!-- TODO: Replace with your paper title -->
+            <h1 class="title is-1 publication-title">Modality Alignment across Trees on Heterogeneous Hyperbolic Manifolds</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Authors with affiliation superscripts -->
+              <span class="author-block">
+                <a href="https://scholar.google.cz/citations?view_op=list_works&hl=zh-CN&user=v2lvJikAAAAJ" target="_blank">Wei Wu</a><sup>*</sup><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=3hzR8qQAAAAJ&hl=zh-CN&oi=sra" target="_blank">Xiaomeng Fan</a><sup>*</sup><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://wu-yuwei-bit.github.io/" target="_blank">Yuwei Wu</a><sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://zhigao2017.github.io/" target="_blank">Zhi Gao</a><sup>1,2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://github.com/Pengxiang-Li" target="_blank">Pengxiang Li</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=Sl6TV7gAAAAJ&hl=en" target="_blank"><strong>Yunde Jia</strong></a><sup>2,1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://scholar.google.com/citations?user=Z9gvBegAAAAJ&hl=en" target="_blank"><strong>Mehrtash Harandi</strong></a><sup>3</sup>
+              </span>
+            </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <!-- Affiliations and venue -->
+                    <span class="author-block">
+                      <small>
+                        <sup>1</sup> Beijing Key Laboratory of Intelligent Information Technology, School of Computer Science &amp; Technology,
+                      </small>
+                      <br>
+                      <small>
+                        Beijing Institute of Technology
+                      </small>
+                      <br>
+                      <small>
+                        <sup>2</sup> Guangdong Laboratory of Machine Perception and Intelligent Computing, Shenzhen MSU-BIT University
+                      </small>
+                      <br>
+                      <small>
+                        <sup>3</sup> Department of Electrical and Computer System Engineering, Monash University
+                      </small>
+                      <br><br>
+                      <b>ICLR 2026 (Poster)</b>
+                    </span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                  <!-- Code button -->
+                  <span class="link-block">
+                    <a href="https://github.com/MCISLAB-Manifold-Learning/HypModalAlign" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Code</span>
+                    </a>
+                  </span>
+
+                  <!-- arXiv button -->
+                  <span class="link-block">
+                    <a href="https://arxiv.org/abs/2510.27391" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="ai ai-arxiv"></i>
+                      </span>
+                      <span>arXiv</span>
+                    </a>
+                  </span>
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Removed separate Motivation section; figure moved to Abstract. -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-centered" style="margin-bottom: 1.5rem;">
+          <img src="static/images/motivation_end.png" alt="Motivation figure" class="fullwidth-image" loading="lazy">
+        </div>
+        <div class="content has-text-justified">
+          <p>
+            Modality alignment is critical for vision-language models (VLMs) to effectively integrate information across modalities. However, existing methods extract hierarchical features from text while representing each image with a single feature, leading to asymmetric and suboptimal alignment. To address this, we propose Alignment across Trees, a method that constructs and aligns tree-like hierarchical features for both image and text modalities. Specifically, we introduce a semantic-aware visual feature extraction framework that applies a cross-attention mechanism to visual class tokens from intermediate Transformer layers, guided by textual cues to extract visual features with coarse-to-fine semantics. We then embed the feature trees of the two modalities into hyperbolic manifolds with distinct curvatures to effectively model their hierarchical structures.
+          </p>
+          <p>
+            To align across the heterogeneous hyperbolic manifolds with different curvatures, we formulate a KL distance measure between distributions on heterogeneous manifolds, and learn an intermediate manifold for manifold alignment by minimizing the distance. We prove the existence and uniqueness of the optimal intermediate manifold. Experiments on taxonomic open-set classification tasks across multiple image datasets demonstrate that our method consistently outperforms strong baselines under few-shot and cross-domain settings.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Our Method section with pipeline overview figure -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Our Method</h2>
+        <div class="content has-text-centered">
+          <img src="static/images/pipeline-v2.png" alt="Pipeline overview" class="fullwidth-image" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- Poster section removed as requested -->
+
+
+<!-- Experimental Results -->
+<section class="section" id="results">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Experimental Results</h2>
+        <p class="has-text-centered has-text-grey is-size-6" style="margin-bottom: 0.75rem;">
+          TOS classification results on the 1-shot and 16-shot settings. We bold the best results.
+        </p>
+        <div class="table-container results-table-container">
+          <table class="table is-bordered is-striped is-hoverable is-fullwidth is-narrow results-table">
+            <thead>
+              <tr>
+                <th rowspan="2">K-Shot</th>
+                <th rowspan="2">Base Method</th>
+                <th rowspan="2">Variant</th>
+                <th colspan="3" class="has-text-centered">Cifar100</th>
+                <th colspan="3" class="has-text-centered">SUN</th>
+                <th colspan="3" class="has-text-centered">ImageNet</th>
+                <th colspan="3" class="has-text-centered">Rare Species</th>
+              </tr>
+              <tr>
+                <th>LA</th><th>HCA</th><th>MTA</th>
+                <th>LA</th><th>HCA</th><th>MTA</th>
+                <th>LA</th><th>HCA</th><th>MTA</th>
+                <th>LA</th><th>HCA</th><th>MTA</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- 1-shot, MaPLe -->
+              <tr>
+                <td>1</td>
+                <td>MaPLe</td>
+                <td>Vanilla</td>
+                <td>68.75</td><td>4.65</td><td>50.60</td>
+                <td>63.98</td><td>25.15</td><td>50.31</td>
+                <td><strong>68.91</strong></td><td>2.97</td><td>48.16</td>
+                <td>41.55</td><td>5.09</td><td>44.75</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>MaPLe</td>
+                <td>+ProTeCt</td>
+                <td>69.33</td><td>48.10</td><td>83.36</td>
+                <td>64.29</td><td>50.45</td><td>76.73</td>
+                <td>66.16</td><td>20.44</td><td>85.18</td>
+                <td>39.92</td><td>13.22</td><td>70.04</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>MaPLe</td>
+                <td>+Ours</td>
+                <td><strong>71.37</strong></td><td><strong>53.19</strong></td><td><strong>85.29</strong></td>
+                <td><strong>67.57</strong></td><td><strong>57.92</strong></td><td><strong>80.55</strong></td>
+                <td>66.33</td><td><strong>25.56</strong></td><td><strong>85.98</strong></td>
+                <td><strong>46.77</strong></td><td><strong>20.94</strong></td><td><strong>76.83</strong></td>
+              </tr>
+              <!-- 1-shot, PromptSRC -->
+              <tr>
+                <td>1</td>
+                <td>PromptSRC</td>
+                <td>Vanilla</td>
+                <td>72.48</td><td>14.36</td><td>51.91</td>
+                <td>70.58</td><td>42.14</td><td>57.19</td>
+                <td>68.82</td><td>4.46</td><td>54.10</td>
+                <td>45.39</td><td>6.72</td><td>44.72</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>PromptSRC</td>
+                <td>+ProTeCt</td>
+                <td>73.07</td><td>49.54</td><td>85.16</td>
+                <td>70.61</td><td>55.52</td><td>78.73</td>
+                <td>68.43</td><td>21.58</td><td>85.63</td>
+                <td>44.56</td><td>20.36</td><td>74.42</td>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>PromptSRC</td>
+                <td>+Ours</td>
+                <td><strong>73.54</strong></td><td><strong>51.91</strong></td><td><strong>85.76</strong></td>
+                <td><strong>70.64</strong></td><td><strong>57.79</strong></td><td><strong>79.94</strong></td>
+                <td><strong>68.86</strong></td><td><strong>25.13</strong></td><td><strong>86.45</strong></td>
+                <td><strong>46.98</strong></td><td><strong>23.03</strong></td><td><strong>77.32</strong></td>
+              </tr>
+              <!-- 16-shot, MaPLe -->
+              <tr>
+                <td>16</td>
+                <td>MaPLe</td>
+                <td>Vanilla</td>
+                <td>75.01</td><td>17.54</td><td>52.21</td>
+                <td>71.86</td><td>33.25</td><td>54.29</td>
+                <td>70.70</td><td>4.15</td><td>48.16</td>
+                <td>50.94</td><td>5.30</td><td>40.41</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>MaPLe</td>
+                <td>+ProTeCt</td>
+                <td>75.34</td><td>61.15</td><td>88.04</td>
+                <td>72.17</td><td>59.71</td><td>82.27</td>
+                <td>69.52</td><td>31.24</td><td>87.87</td>
+                <td>48.14</td><td>24.82</td><td>78.79</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>MaPLe</td>
+                <td>+Ours</td>
+                <td><strong>77.92</strong></td><td><strong>69.38</strong></td><td><strong>90.89</strong></td>
+                <td><strong>75.47</strong></td><td><strong>68.67</strong></td><td><strong>86.02</strong></td>
+                <td><strong>71.41</strong></td><td><strong>43.79</strong></td><td><strong>88.78</strong></td>
+                <td><strong>69.96</strong></td><td><strong>53.65</strong></td><td><strong>87.27</strong></td>
+              </tr>
+              <!-- 16-shot, PromptSRC -->
+              <tr>
+                <td>16</td>
+                <td>PromptSRC</td>
+                <td>Vanilla</td>
+                <td>77.71</td><td>15.07</td><td>56.86</td>
+                <td>75.75</td><td>45.23</td><td>59.42</td>
+                <td>71.50</td><td>2.48</td><td>46.71</td>
+                <td>59.20</td><td>11.64</td><td>55.82</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>PromptSRC</td>
+                <td>+ProTeCt</td>
+                <td>78.76</td><td>66.74</td><td>90.79</td>
+                <td>75.54</td><td>66.01</td><td>84.75</td>
+                <td>70.98</td><td>32.89</td><td>88.31</td>
+                <td>56.40</td><td>33.92</td><td>82.47</td>
+              </tr>
+              <tr>
+                <td>16</td>
+                <td>PromptSRC</td>
+                <td>+Ours</td>
+                <td><strong>78.90</strong></td><td><strong>68.47</strong></td><td><strong>91.12</strong></td>
+                <td><strong>76.54</strong></td><td><strong>69.18</strong></td><td><strong>86.20</strong></td>
+                <td><strong>71.67</strong></td><td><strong>42.26</strong></td><td><strong>89.64</strong></td>
+                <td><strong>67.38</strong></td><td><strong>50.77</strong></td><td><strong>87.60</strong></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Visualization: Learned Representations -->
+<section class="section" id="viz-representations">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths has-text-centered">
+        <h2 class="title is-3">Learned Representations</h2>
+        <p class="has-text-grey is-size-6" style="margin-bottom: 1rem;">
+          Our method demonstrates improved feature separability across taxonomic categories.
+        </p>
+        <img src="static/images/viz_feature-v2.png" alt="Learned feature representations with improved separability across taxonomic categories" class="fullwidth-image" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End Visualization: Learned Representations -->
+
+
+<!-- Visualization: Attention maps -->
+<section class="section" id="viz-attention">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths has-text-centered">
+        <h2 class="title is-3">Attention Visualization</h2>
+        <p class="has-text-grey is-size-6" style="margin-bottom: 1rem;">
+          Our model adaptively generates semantic-aware visual features by attending to different regions corresponding to each taxonomic granularity (from coarse to fine, left to right).
+        </p>
+        <div class="columns is-variable is-3 is-vcentered">
+          <!-- Left: Baseline -->
+          <div class="column">
+            <div class="box">
+              <p class="has-text-weight-semibold is-size-6">Baseline</p>
+              <img src="static/images/viz_rarespecies_baseline.png" alt="Baseline attention visualization across taxonomic granularity" class="fullwidth-image" loading="lazy">
+            </div>
+          </div>
+          <!-- Right: Ours -->
+          <div class="column">
+            <div class="box">
+              <p class="has-text-weight-semibold is-size-6">Ours</p>
+              <img src="static/images/viz-v4.png" alt="Our model's semantic-aware attention visualization across taxonomic granularity" class="fullwidth-image" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <!-- <p class="has-text-grey is-size-7">Left: baseline. Right: ours.</p> -->
+      </div>
+    </div>
+  </div>
+  </section>
+<!-- End Visualization: Attention maps -->
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <div class="bibtex-header">
+        <h2 class="title">Citation &amp; BibTeX</h2>
+        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+          <i class="fas fa-copy"></i>
+          <span class="copy-text">Copy</span>
+        </button>
+      </div>
+      <p class="has-text-grey is-size-6" style="margin-bottom: 0.75rem;">
+        If you find our work useful, please cite:
+      </p>
+      <!-- <pre id="plain-citation"><code>Wu, W., Fan, X., Wu, Y., Gao, Z., Li, P., Jia, Y., & Harandi, M. (2026). Modality Alignment across Trees on Heterogeneous Hyperbolic Manifolds. International Conference on Learning Representations (ICLR).</code></pre> -->
+      <pre id="bibtex-code"><code>@inproceedings{wu2026hypmodalalign,
+  title={Modality Alignment across Trees on Heterogeneous Hyperbolic Manifolds},
+  author={Wu, Wei and Fan, Xiaomeng and Wu, Yuwei and Gao, Zhi and Li, Pengxiang and Jia, Yunde and Harandi, Mehrtash},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2026}
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
