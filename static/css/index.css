@@ -38,6 +38,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Widen primary content area (~30% wider than default layout) */
+.container.is-max-desktop {
+  max-width: 1200px !important;
+}
+
+.column.is-four-fifths {
+  width: 90%;
+  max-width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 /* Modern Button Styles */
 .button {
@@ -790,6 +802,8 @@ a:focus {
 .results-table tr.best-row th {
   font-weight: 700;
 }
+
+
 
 
 
